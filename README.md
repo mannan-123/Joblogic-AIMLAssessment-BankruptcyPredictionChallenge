@@ -208,6 +208,16 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 print("ROC AUC Score:", roc_auc_score(y_test, y_proba))
 ```
 
+| Class            | Precision | Recall | F1-Score | Support |
+| ---------------- | --------- | ------ | -------- | ------- |
+| Non-Bankrupt (0) | 0.98      | 1.00   | 0.99     | 8263    |
+| Bankrupt (1)     | 0.94      | 0.60   | 0.73     | 418     |
+| **Accuracy**     |           |        | **0.98** | 8681    |
+| **Macro Avg**    | 0.96      | 0.80   | 0.86     | 8681    |
+| **Weighted Avg** | 0.98      | 0.98   | 0.98     | 8681    |
+
+**ROC AUC Score:** `0.9734`
+
 ---
 
 ## 9. Interpretation of Results and Business Insights
